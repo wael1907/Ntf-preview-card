@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+*{
+    margin: 0;padding: 0;text-decoration: none;box-sizing: border-box;font-family: 'Outfit', sans-serif;
+}
+body {
+    background: hsl(217, 54%, 11%);
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    padding: 20px;
+    background: hsl(216, 50%, 16%);
+    margin: 50px auto;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    outline: 10px solid hsl(215, 56%, 12%);
+}
+.img {position: relative;cursor: pointer;}
+.img img {
+    width: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.img::before {
+    content: "";
+    background:hsl(178, 100%, 50%);
+    width: 100%;
+    height: 98.7%;
+    position: absolute;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    opacity: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.img::after {
+    content: "";
+    background:url(images/icon-view.svg );
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+.img:hover::before {
+    opacity: .5;
+}
+.img:hover::after {
+    opacity: 1;
+}
+.text a{
+    color: white;
+    text-align: left;
+    font-size: 18px;
+    line-height: 3;
+    cursor: pointer;
+    letter-spacing: .5px;
+}
+.text a:hover {
+    color: hsl(178, 100%, 50%);
+}
+.text p {
+    color: hsl(216, 12%, 61%);
+    font-size: 18px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+.coin {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    position: relative;
+    width: 100%;
+    justify-items: center;
+}
+.coin .one {
+    color: hsl(178, 100%, 50%);
+    margin-left: 10px;
+}
+.coin .one::before {
+    content: "";
+    background: url(images/icon-ethereum.svg);
+    width: 11px;
+    height: 18px;
+    position: absolute;
+    left: -7px;
+}
+.coin .two {
+    color: hsl(216, 12%, 61%);
+}
+.coin .two::before {
+    content: "";
+    background: url(images/icon-clock.svg);
+    width: 15px;
+    height: 16px;
+    position: absolute;
+    right: 80px;
+    top: 2px;
+}
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: hsl(215, 32%, 27%);
+}
+.person {
+    position: relative;
+    padding: 25px 0;
+}
+.person img{
+    width: 30px;
+    position: absolute;
+    top: 15px;
+}
+.person span {
+    color: hsl(216, 12%, 61%);
+    position: absolute;
+    font-weight: 300;
+    left: 40px;
+    top: 20px;
+    letter-spacing: .6px;
+}
+.person a {
+    color: white;
+    font-weight: 400;
+}
+.person a:hover {
+    color: hsl(178, 100%, 50%);
+}
+.attribution { font-size: 11px; text-align: center;color: hsl(0, 0%, 51%);}
+.attribution a { color: hsl(228, 13%, 92%); }
+.attribution a:hover {
+    color: hsl(178, 86%, 31%);
+}
